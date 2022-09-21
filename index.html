@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dientitos</title>
+    <script src="https://kit.fontawesome.com/a08f24cd60.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NavBar -->
+
+    <nav class="navbar">
+        <a class="logo" >Dientitos<i class="fa-solid fa-tooth"></i></a>
+        <div class="navigation-bar">
+            <a class="dientitos-method-link link">Method</a>
+            <a class="dental-services-link link">Services</a>
+            <a class="contact-us-link link">Contact Us</a>
+        </div>
+        <a onclick="setContactUsSection()" class="book-appointment link">Book Now!</a>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="sidebar-container">
+        <div class="sidebar">
+            <i class="fa-solid fa-xmark"></i>
+            <a class="link" onclick="setHeroSection(); hideSideBar();">Home</a>
+            <a onclick="setMethodsSection(); hideSideBar();" class="dientitos-method-sidebar link">Dientitos method</a>
+            <a onclick="setDentalServicesSection(); hideSideBar();" class="dental-services-sidebar link">Dental services</a>
+            <a onclick="setContactUsSection(); hideSideBar();" class="contact-us-sidebar link">Contact Us</a>
+            <a onclick="setContactUsSection(); hideSideBar();" class="book-appointment-sidebar link">Book Now</a>
+        </div>
+    </div>
+
+    <div class="sections-container">
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <div>
+            <h1 class="hero-text">One of the best orthodontists and orthodontic treatments in the country</h1>
+            <br>
+            <h1 class="hero-text">Know more about us! ➡</h1>
+        </div>
+        <img class="hero-img" src="/images/hero-img.jpg" alt="hero-img">
+    </section>
+
+    <!-- Method Section -->
+
+    <section class="method-section">
+        <h1>Dientitos Method</h1>
+        <img class="method-img" src="/images/doctors-img.jpg" alt="method-img">
+        <ul class="methods">
+            <li><i class="fa-solid fa-house-chimney-medical"></i>We have 49 own clinics in 21 cities across the country, to be closer to you.</li>
+            <li><i class="fa-solid fa-microchip"></i>Advanced technology and equipment await you at Dientitos.</li>
+            <li><i class="fa-solid fa-wallet"></i>Just worry about smiling. You will have up to 5 years to finance your treatment at your own pace.</li>
+            <li><i class="fa-solid fa-tooth tooth-icon"></i>Whatever your problem, your nearest Dientitos clinic will be able to help you.</li>
+        </ul>
+    </section>
+
+    <!-- Dental Services Section -->
+
+    <section class="dental-services-section">
+        <h1>Dental services</h1>
+        <ul class="dental-services">
+            <li>
+                <img src="/images/teeth-whitening.webp" alt="teeth-whitening-img">
+                <h3>Teeth whitening</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat inventore magnam ducimus quibusdam in magni dolorum odit aliquam eaque eos.</p>
+            </li>
+            <li>
+                <img src="/images/cavities-img.webp" alt="cavities-img">
+                <h3>Cavities</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim non nulla ullam saepe explicabo obcaecati eos numquam ipsum, odit aspernatur.</p>
+            </li>
+            <li>
+                <img src="/images/invisible-braces.webp" alt="invisible-braces-img">
+                <h3>invisible braces</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim non nulla ullam saepe explicabo obcaecati eos numquam ipsum, odit aspernatur.</p>
+            </li>
+            <li>
+                <img src="/images/teeth-cleaning.webp" alt="teeth-cleaning-img">
+                <h3>Teeth cleaning</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim non nulla ullam saepe explicabo obcaecati eos numquam ipsum, odit aspernatur.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact-section">
+        <h1>Connect with Us</h1>
+        <div class="contact-container">
+        <form class='contact-form'>
+            <h2>Get in Contact and Book your Appoinment ✉️</h2>
+            <input class='input-field' name='fullName' type="text" placeholder='Full name*' required />
+            <input class='input-field' name='email' type="text" placeholder='Email address*' required />
+            <textarea class='input-field' name="message" id="" rows="5" placeholder='Message'></textarea>
+            <button class='submit-btn' type='submit'>Book Appointment</button>
+        </form>
+        <div class="maps-container">
+            <h2>Find your nearest clinic 🏥</h2>
+        <iframe class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21492590.788220666!2d-95.81543301739728!3d37.49862249899275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sEstados%20Unidos!5e0!3m2!1ses-419!2sco!4v1659623870160!5m2!1ses-419!2sco"
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </section>
+
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
