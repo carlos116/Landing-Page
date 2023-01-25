@@ -89,6 +89,7 @@ const setPage = (currentPage) => {
         contactUsSection.style.opacity = '1'
         contactUsSection.style.position = 'absolute'
     }
+    hideSideBar()
 }
 
 setPage(0)
