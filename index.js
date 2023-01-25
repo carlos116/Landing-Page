@@ -41,9 +41,7 @@ window.addEventListener('resize', () => {
 
 // Set Sections
 
-let currentPage = 0;
-
-const setPage = () => {
+const setPage = (currentPage) => {
         heroSection.style.opacity = '0'
         methodSection.style.opacity = '0'
         dentalServicesSection.style.opacity = '0'
@@ -93,40 +91,20 @@ const setPage = () => {
     }
 }
 
-setPage()
-
-const setHeroSection = () => {
-    currentPage = 0
-    setPage()
-}
-
-const setMethodsSection = () => {
-    currentPage = 1
-    setPage()
-}
-
-const setDentalServicesSection = () => {
-    currentPage = 2
-    setPage()
-}
-
-const setContactUsSection = () => {
-    currentPage = 3
-    setPage()
-}
+setPage(0)
 
 logo.addEventListener('click', () => {
-    setHeroSection()
+    setPage(0)
 })
 
 methodLink.addEventListener('click', () => {
-    setMethodsSection()
+    setPage(1)
 })
 
 dentalServicesLink.addEventListener('click', () => {
-    setDentalServicesSection()
+    setPage(2)
 })
 
 contactUsLink.addEventListener('click', () => {
-    setContactUsSection()
+    setPage(3)
 })
